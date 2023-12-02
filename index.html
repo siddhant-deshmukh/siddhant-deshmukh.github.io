@@ -7,52 +7,58 @@
   <link href="./dist/output.css" rel="stylesheet">
   <title>Siddhant Deshmukh Portfolio</title>
   <script defer src="./app.js"></script>
+  <script defer src="./projects.js"></script>
+
 </head>
 
 <body class="overflow-none">
-  <main class="overflow-y-auto overflow-x-hidden text-primary bg-base1">
+  <main class="overflow-y-auto flex flex-col items-center overflow-x-hidden text-primary bg-base1">
 
     <!-- *Section         Hero  -->
-    <section id="hero-section" class="relative  flex items-end sm:items-center  min-h-[100vh] max-h-none 2xl:max-h-[1500px] w-full">
+    <section id="hero-section"
+      class="relative  flex items-end sm:items-center  min-h-[100vh] 2xl:min-h-0 max-h-none 2xl:max-h-[1500px] w-full">
       <!-- NavBar -->
       <nav id="temp-nav-bar"
-        class="w-full fixed bg-opacity-60 top-0 left-0 bg-base1 shadow-md transition-all temp-hide-nav duration-500 opacity-0 flex py-3 px-5  xl:px-10 xl:py-5 z-50">
-        <span
-          id="nav-logo"
+        class="w-full fixed bg-opacity-60 top-0 left-0 bg-base1 shadow-md transition-all flex py-3 px-5  xl:px-10 xl:py-5 z-50">
+        <span id="nav-logo"
           class="hidden sm:block text-secondary font-bold border-secondary border-2 rounded-full text-2xl px-3 py-1 xl:text-5xl xl:px-5 xl:py-2">
           S
         </span>
         <div id="hyperlinks-list" class="flex space-x-7 ml-auto items-center text-sm sm:text-lg xl:text-xl font-medium">
-          <a href="/#about-me-section" class="hidden sm:block">  About  </a>
-          <a href="/#projects-section">  Projects  </a>
-          <a href="/#contact-me-section">  Contact Me  </a>
-          <a href="/#" class="p-1.5 xl:p-3 border-2 border-secondary text-secondary">  Resume  </a>
+          <a href="/#about-me-section" class="hidden sm:block"> About </a>
+          <a href="/#projects-section"> Projects </a>
+          <a href="/#contact-me-section"> Contact Me </a>
+          <a href="https://siddhant-deshmukh.github.io/resume" target="_blank"
+            class="p-1.5 xl:p-3 border-2 border-secondary text-secondary"> Resume </a>
         </div>
       </nav>
       <!-- Dark layer with z-index = 10 -->
-      <div class="block absolute w-full h-full max-w-full max-h-full z-10 bg-base1 bg-opacity-50 sm:bg-opacity-40 xl:bg-opacity-30"></div>
+      <div
+        class="block absolute w-full h-full max-w-full max-h-full z-10 bg-base1 bg-opacity-50 sm:bg-opacity-40 xl:bg-opacity-30">
+      </div>
       <!--* Main hero section -->
       <div
-        class="flex mb-[30%] sm:mb-0  px-3 overflow-hidden static flex-col sm:flex-row items-center  justify-start text-white w-full xl:w-fit xl:mx-auto space-x-10 h-fit sm:h-auto">
-        <div class="z-20  mr-auto  w-full  xl:h-fit xl:w-fit xl:mr-0 temp-hidden p-10 overflow-visible mx-5 sm:ml-10 xl:ml-0 max-w-[800px] ">
+        class="flex mb-[30%] sm:mb-0  px-3 static flex-col sm:flex-row items-center  justify-start text-white w-full xl:w-fit xl:mx-auto space-x-10 h-fit sm:h-auto">
+        <div
+          class="z-20  mr-auto  w-full  xl:h-fit xl:w-fit xl:mr-0 temp-hidden p-10 overflow-visible mx-5 sm:ml-10 xl:ml-0 max-w-[800px] ">
           <h5 class="text-sm sm:text-xl text-secondary ml-1">
             Full Stack developer
           </h5>
-          <h1 class="text-5xl sm:text-6xl lg:text-8xl my-4 lg:my-10 font-semibold lg:w-fit lg:whitespace-nowrap text-gray-200">
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl xl:text-8xl my-4 lg:my-10 font-semibold lg:w-fit lg:whitespace-nowrap text-gray-200">
             Siddhant Deshmukh
           </h1>
           <p class="text-base sm:text-xl pr-3 flex-wrap w-full">
             I am a Full stack developer having expertise in both frontend and backend technologies.
           </p>
           <div id="contact-hyperlinks" class="flex text-sm sm:text-xl w-fit mt-10 lg:mt-20">
-            <a href="#">Github</a>
-            <a href="#">LinkedIn</a>
+            <a target="_blank" href="https://github.com/siddhant-deshmukh">Github</a>
+            <a target="_blank" href="https://www.linkedin.com/in/siddhant-sd/">LinkedIn</a>
             <a href="#contact-me-section">Contact Me</a>
           </div>
         </div>
 
-        <div
-          id="cube-animation"
+        <div id="cube-animation"
           class="flex z-0 absolute opacity-0 right-0 top-[10%] sm:top-0 w-full justify-center sm:w-fit sm:right-10 xl:static xl:mr-10 xl:opacity-100 h-auto sm:h-full items-center temp-hide-scale">
           <div class="scene mx-auto sm:mx-0">
             <div class="cube ">
@@ -69,14 +75,14 @@
     </section>
 
     <!-- *Section         About Me                    -->
-    <section id="about-me-section" class="relative  min-h-[80vh] sm:py-32 w-full">
+    <section id="about-me-section" class="relative sm:py-32 w-full max-w-7xl">
       <!-- <img class="absolute right-[5%] z-0 bottom-[10%] border-secondary2 border aspect-square h-[75%]" src="./src/imgs/avatar.png"/> -->
-      <div class="flex mb-10 flex-col items-start px-5 sm:px-10 xl:px-[10%] space-y-20 justify-center w-full h-full">
-        <div class="w-full  flex items-center space-x-10 lg:space-x-36  h-fit">
-          <div class="w-full md:w-[70%] lg:w-auto  bg-opacity-30 lg:max-w-[800px] temp-hidden">
+      <div class="flex mb-10 flex-col items-start px-5 md:px-10 space-y-5 justify-center w-full h-full">
+        <div class="w-full  flex items-center space-x-10">
+          <div class="bg-opacity-30 temp-hidden">
             <h2 class="text-2xl lg:text-4xl font-bold">About Me</h2>
 
-            <p class="text-gray-200 text-sm lg:text-xl">
+            <p class="text-gray-200">
               <br />
               Hello, I'm Siddhant Deshmukh, a recent graduate from 2023. I started software developement in second year
               of
@@ -90,29 +96,26 @@
               environments and relish challenges that push my boundaries.
             </p>
           </div>
-          <div class="w-[0%] hidden md:block md:w-[30%] lg:w-auto mx-0 overflow-hidden lg:max-h-[600px]">
-            Image by
-            <a
-              href="https://www.freepik.com/free-vector/antigravity-technology-with-elements_4265511.htm#query=3d%20computer&position=1&from_view=search&track=ais">Freepik</a>
-            <img class="h-full w-full object-fill temp-hide-scale lg:h-auto" src="./src/imgs/style/desktop.jpg" />
-          </div>
+          <img class="hidden md:block w-[300px] lg:w-[350px] tablet:w-[400px] aspect-[12/13] temp-hide-scale" src="./src/imgs/avatar-b.png" />
         </div>
 
         <div class="w-full overflow-clip">
           <h2 class="text-2xl lg:text-4xl font-bold">Skills</h2>
-          <ul id="skills-list" class="temp-hidden grid grid-cols-4 place-content-stretch justify-center gap-3 sm:flex w-full sm:justify-start mt-5 flex-wrap">
-            <li>  <img src="./src/imgs/react.svg" /> </li>
-            <li>  <img src="./src/imgs/nodejs.svg" /> </li>
-            <li>  <img src="./src/imgs/mongodb.svg" /> </li>
-            <li>  <img src="./src/imgs/postgresql.svg" /> </li>
-            <li>  <img src="./src/imgs/go.svg" /> </li>
-            <li>  <img src="./src/imgs/python.svg" /> </li>
-            <li>  <img src="./src/imgs/firebase.svg" /> </li>
-            <li>  <img src="./src/imgs/docker.svg" /> </li>
-            <li>  <img src="./src/imgs/kubernetes.svg" /> </li>
-            <li>  <img src="./src/imgs/git.svg" /> </li>
-            <li>  <img src="./src/imgs/aws.svg" /> </li>
-            <li>  <img src="./src/imgs/google-cloud.svg" /> </li>
+          <ul id="skills-list"
+            class="temp-hidden grid grid-cols-5 place-content-stretch justify-center gap-3 sm:flex w-full sm:justify-start mt-5 flex-wrap">
+            <li> <img src="./src/imgs/colored/react.svg" /> </li>
+            <li> <img src="./src/imgs/colored/nodejs.svg" /> </li>
+            <li> <img src="./src/imgs/colored/mongodb.svg" /> </li>
+            <li> <img src="./src/imgs/colored/postgresql.svg" /> </li>
+            <li> <img src="./src/imgs/colored/go.svg" /> </li>
+            <li> <img src="./src/imgs/colored/python.svg" /> </li>
+            <li> <img src="./src/imgs/colored/firebase.svg" /> </li>
+            <li> <img src="./src/imgs/colored/docker.svg" /> </li>
+            <li> <img src="./src/imgs/colored/kubernetes.svg" /> </li>
+            <li> <img src="./src/imgs/colored/git.svg" /> </li>
+            <li> <img src="./src/imgs/colored/aws.svg" /> </li>
+            <li> <img src="./src/imgs/colored/google-cloud.svg" /> </li>
+            <li> <img src="./src/imgs/colored/tailwindcss.svg" /> </li>
           </ul>
         </div>
 
@@ -120,21 +123,255 @@
     </section>
 
     <!-- *Section         Projects                    -->
-    <section id="projects-section" class="p-10 md:p-20">
+    <!-- <section id="projects-section" class="p-10 md:p-20">
       <h1 class="text-2xl lg:text-4xl font-bold text-center">
         <span>
           Projects
         </span>
         <div class="border sm:border-2 w-52 max-w-full mx-auto mt-2"></div>
       </h1>
-      <ul 
-        id="projects-list"
-        class="flex flex-col space-y-5 lg:grid grid-cols-2 place-content-center place-items-center mt-10 max-w-7xl mx-auto w-full gap-5 lg:gap-10">
+      <ul id="projects-list"
+        class="flex flex-col lg:flex-row flex-wrap place-content-center place-items-center mt-10 max-w-7xl mx-auto w-full gap-5 lg:gap-10">
       </ul>
+    </section> -->
+
+
+    <section id="projects-section" class="w-full max-w-7xl px-5 md:px-10">
+      <!-- <h3 class="text-xl font-semibold mb-4">Projects</h3> -->
+      <h2 class="text-2xl lg:text-4xl font-bold">
+        Projects
+      </h2>
+      <ul id="project-types-list" class="w-full text-lg pt-5 flex flex-wrap">
+        <div>
+          <button class="project-filter-btn" name="all">All</button>
+        </div>
+        <div>
+          <button class="project-filter-btn" name="mern">MERN stack</button>
+        </div>
+        <!-- <div>
+          <button class="project-filter-btn" name="static">Static</button>
+        </div> -->
+        <div>
+          <button class="project-filter-btn" name="react">React</button>
+        </div>
+        <div>
+          <button class="project-filter-btn" name="others">Others</button>
+        </div>
+      </ul>
+      <div id="projects-list-container" class="my-2">
+        <ul id="projects-list" class="flex flex-col">
+          <!-- Twitter Clone -->
+          <div data-tag="react-others">
+            <h4>
+              <p>Twitter Clone:</p>
+              <a href="https://github.com/siddhant-deshmukh/twitter-clone-using-nextjs" target="_blank"><img
+                  src="./src/imgs/github.svg" /></a>
+            </h4>
+            <ul class="points">
+              <li>
+                <mark></mark>Developed a full-stack NextJS based social media website that allows
+                users to tweet with text and
+                media, like, retweet, comment, and view tweet feeds..
+              </li>
+              <li>
+                <mark></mark>Uses Azure services for database, storage, authentication, and cloud
+                functions.
+              </li>
+            </ul>
+            <div>
+              <span>Next.js</span>
+              <span>React.js</span>
+              <span>TypeScript</span>
+              <span>Azure</span>
+            </div>
+          </div>
+          <!-- Form app -->
+          <div data-tag="others-react">
+            <h4>
+              <p>Form App:</p>
+              <a href="https://github.com/siddhant-deshmukh/form-app-golang-postgres" target="_blank"><img
+                  src="./src/imgs/github.svg" /></a>
+            </h4>
+            <ul class="points">
+              <li>
+                <mark></mark>Built a full-stack web application that replicates Google Form
+                functionality using the MERN stack.
+              </li>
+              <li>
+                <mark></mark>Secured user authentication with JSONWebTokens and have OAuth
+                options like Google, GitHub.
+              </li>
+            </ul>
+            <div>
+              <span>Golang</span>
+              <span>Gin</span>
+              <span>PostgreSQL</span>
+              <span>React.js</span>
+              <span>Redux</span>
+              <span>TypeScript</span>
+            </div>
+          </div>
+          <!-- Instagram Clone -->
+          <div data-tag="react-others">
+            <h4>
+              <p>Instagram Clone:</p>
+              <a href="https://github.com/siddhant-deshmukh/firebase-insta" target="_blank"><img
+                  src="./src/imgs/github.svg" /></a>
+            </h4>
+            <ul class="points">
+              <li>
+                <mark></mark>Styled the UI with tailwindcss and managed frontend caching and
+                state with React Query.
+              </li>
+              <li>
+                <mark></mark>Optimized and secured database queries using Firestore
+              </li>
+            </ul>
+            <div>
+              <span>Firebase</span>
+              <span>React.js</span>
+              <span>React Query</span>
+              <span>TypeScript</span>
+              <span>Tailwindcss</span>
+            </div>
+          </div>
+          <!-- Google Form Clone -->
+          <div data-tag="mern">
+            <h4>
+              <p>Google Form Clone:</p>
+              <a href="https://github.com/siddhant-deshmukh/GoogleFormClone-frontend" target="_blank"><img
+                  src="./src/imgs/github.svg" /></a>
+            </h4>
+            <ul class="points">
+              <li>
+                <mark></mark>Built a full-stack web application that replicates Google Form
+                functionality using the MERN stack.
+              </li>
+              <li>
+                <mark></mark>Secured user authentication with JSONWebTokens and have OAuth
+                options like Google, GitHub.
+              </li>
+            </ul>
+            <div>
+              <span>MERN</span>
+              <span>Redux</span>
+              <span>TypeScript</span>
+              <span>MongoDB</span>
+              <span>React.js</span>
+              <span>Express.js</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+          <!-- Crypto dashboard -->
+          <div data-tag="react">
+            <h4>
+              <p>Crypto dashboard:</p>
+              <a href="https://github.com/siddhant-deshmukh/crypto-rate-dashboard" target="_blank"><img
+                  src="./src/imgs/github.svg" /></a>
+            </h4>
+            <ul class="points">
+              <li>
+                <mark></mark>Responsive, beautiful dashboard with dark mode.
+              </li>
+              <li>
+                <mark></mark>Takes crypto data from the WazirX api and show in the dashboard.
+              </li>
+            </ul>
+            <div>
+              <span>React.js</span>
+              <span>TypeScript</span>
+              <span>REST API</span>
+            </div>
+          </div>
+          <!-- Transport hub  -->
+          <div data-tag="mern">
+            <h4>
+              <p>Transport hub:</p>
+              <a href="https://github.com/siddhant-deshmukh/TranportHub" target="_blank"><img
+                  src="./src/imgs/github.svg" /></a>
+            </h4>
+            <ul class="points">
+              <li>
+                <mark></mark>Through this app one can create an order and the suppliers will make a bid later the buyer
+                can buy it.
+              </li>
+              <li>
+                <mark></mark>Have chat functionality.
+              </li>
+            </ul>
+            <div>
+              <span>MERN</span>
+              <span>TypeScript</span>
+              <span>MongoDB</span>
+              <span>React.js</span>
+              <span>Express.js</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+          <!-- YourHR -->
+          <div data-tag="mern-others">
+            <h4>
+              <p>YourHR:</p>
+              <a href="https://github.com/siddhant-deshmukh/YourHR" target="_blank"><img
+                  src="./src/imgs/github.svg" /></a>
+            </h4>
+            <ul class="points">
+              <li>
+                <mark></mark>One can take users data, data-files and store and analyse them.
+              </li>
+              <li>
+                <mark></mark>Using AWS s3 to store data files.
+              </li>
+            </ul>
+            <div>
+              <span>AWS S3</span>
+              <span>MERN</span>
+              <span>TypeScript</span>
+            </div>
+          </div>
+          <!-- Car simulation -->
+          <div data-tag="others">
+            <h4>
+              <p>Car Simulation:</p>
+              <a href="https://github.com/siddhant-deshmukh/car-simulation" target="_blank"><img
+                  src="./src/imgs/github.svg" /></a>
+            </h4>
+            <ul class="points">
+              <li>
+                <mark></mark>The main purpose of this project is to create an environment where we can control a car and
+                simulate things like roads, obsticles the car will face and this will be later used to train car drive
+                automatically.
+              </li>
+            </ul>
+            <div>
+              <span>Python</span>
+              <span>Python Arcade</span>
+              <span>Pymunk</span>
+              <span>Physics Engine</span>
+            </div>
+          </div>
+          <!-- static website -->
+          <!-- <div data-tag="static">
+            <h4>
+              <p>Static websites:</p>
+            </h4>
+            <article data-tag="static"
+              class="grid grid-cols-1 justify-items-center mt-2 sm:grid-cols-2 xl:grid-cols-3 w-full gap-2 flex-wrap">
+              <img class="max-w-full aspect-video rounded-lg border border-secondary2"
+                src="./src/imgs/project/siddhant-deshmukh-website.gif" />
+              <img class="max-w-full aspect-video rounded-lg border border-secondary2"
+                src="./src/imgs/project/PY-web-1.jpeg" />
+              <img class="max-w-full aspect-video rounded-lg border border-secondary2"
+                src="./src/imgs/project/PY-web-2.jpeg" />
+            </article>
+          </div> -->
+        </ul>
+      </div>
     </section>
 
+
     <!-- *Section         Contact Me / Hire Me             -->
-    <section id="contact-me-section" class="h-screen  items-center flex">
+    <section id="contact-me-section" class="mt-10 w-full items-center flex">
       <div class="max-w-3xl w-full p-8 lg:py-16  mx-auto  shadow-lg ">
         <h2 class="mb-4 text-2xl lg:text-4xl tracking-tight font-extrabold text-center text-gray-200">
           Contact Me
@@ -142,43 +379,87 @@
         <p class="mb-8 lg:mb-16 font-light text-center text-gray-300 sm:text-xl">
           Wanted to Hire Me for any full stack related work?
         </p>
-        <form action="#" class="space-y-8">
+        <form action="#" class="space-y-8 flex flex-col">
           <div>
             <label for="email" class="block mb-2 text-sm font-medium text-gray-100 dark:text-gray-300">
               Your email
             </label>
-            <input 
-              id="email"
-              type="email" 
+            <input id="email" type="email"
               class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-              placeholder="name@flowbite.com" 
-              required >
+              placeholder="name@flowbite.com" required>
           </div>
           <div>
             <label for="subject" class="block mb-2 text-sm font-medium text-gray-100 dark:text-gray-300">Subject</label>
-            <input 
-              id="subject"
-              type="text" 
+            <input id="subject" type="text"
               class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
-              placeholder="Let us know how we can help you" required>
+              placeholder="Let me know how we can help you" required>
           </div>
           <div class="sm:col-span-2">
-            <label for="message" class="block mb-2 text-sm font-medium text-gray-100 dark:text-gray-400">
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-100 dark:text-secondary">
               Your message
             </label>
-            <textarea 
-              rows="6"
-              id="message" 
+            <textarea rows="6" id="message"
               class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
               placeholder="Leave a comment...">
             </textarea>
           </div>
-          <button 
-            type="submit"
-            class="py-3 px-5 text-sm font-medium text-center border border-primary text-primary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
-            message
-          </button>
+          <a href="mailto:siddhant.deshmukh@outlook.com?subject=Meow"
+            class="py-3 px-5 text-sm font-medium text-center border border-primary text-primary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+            Send message
+          </a>
         </form>
+      </div>
+    </section>
+    <!-- component -->
+    <!-- Foooter -->
+    <section class="px-2 py-10">
+      <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <p class="mt-8 text-base leading-6 text-center text-secondary">
+          Contact Me I will reach you within 24 hours.
+        </p>
+        <div class="flex justify-center my-8 space-x-6">
+          <a href="#" class="text-secondary hover:text-secondary2">
+            <span class="sr-only">Mail</span>
+            <svg class="w-8 lg:w-10 xl:w-12 aspect-square" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+          </a>
+          <a href="#" class="text-secondary hover:text-secondary2">
+            <span class="sr-only">Instagram</span>
+            <svg class="w-8 lg:w-10 xl:w-12 aspect-square" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="#" class="text-secondary hover:text-secondary2">
+            <span class="sr-only">Twitter</span>
+            <svg class="w-8 lg:w-10 xl:w-12 aspect-square" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+              </path>
+            </svg>
+          </a>
+          <a href="#" class="text-secondary hover:text-secondary2">
+            <span class="sr-only">GitHub</span>
+            <svg class="w-8 lg:w-10 xl:w-12 aspect-square" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="#" class="text-secondary hover:text-secondary2">
+            <span class="sr-only">Mail</span>
+            <svg class="w-8 lg:w-10 xl:w-12 aspect-square" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+          </a>
+        </div>
+        <span></span>
       </div>
     </section>
   </main>
