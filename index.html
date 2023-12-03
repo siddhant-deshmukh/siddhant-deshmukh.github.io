@@ -96,7 +96,8 @@
               environments and relish challenges that push my boundaries.
             </p>
           </div>
-          <img class="hidden md:block w-[300px] lg:w-[350px] tablet:w-[400px] aspect-[12/13] temp-hide-scale" src="./src/imgs/avatar-b.png" />
+          <img class="hidden md:block w-[300px] lg:w-[350px] tablet:w-[400px] aspect-[12/13] temp-hide-scale"
+            src="./src/imgs/avatar-b.png" />
         </div>
 
         <div class="w-full overflow-clip">
@@ -141,7 +142,7 @@
       <h2 class="text-2xl lg:text-4xl font-bold">
         Projects
       </h2>
-      <ul id="project-types-list" class="w-full text-lg pt-5 flex flex-wrap">
+      <ul id="project-types-list" class="w-full text-lg pt-5 flex flex-wrap temp-hidden">
         <div>
           <button class="project-filter-btn" name="all">All</button>
         </div>
@@ -371,7 +372,7 @@
 
 
     <!-- *Section         Contact Me / Hire Me             -->
-    <section id="contact-me-section" class="mt-10 w-full items-center flex">
+    <!-- <section id="contact-me-section" class="mt-10 w-full items-center flex">
       <div class="max-w-3xl w-full p-8 lg:py-16  mx-auto  shadow-lg ">
         <h2 class="mb-4 text-2xl lg:text-4xl tracking-tight font-extrabold text-center text-gray-200">
           Contact Me
@@ -389,44 +390,57 @@
               placeholder="name@flowbite.com" required>
           </div>
           <div>
-            <label for="subject" class="block mb-2 text-sm font-medium text-gray-100 dark:text-gray-300">Subject</label>
-            <input id="subject" type="text"
+            <label for="email-subject" class="block mb-2 text-sm font-medium text-gray-100 dark:text-gray-300">Subject</label>
+            <input id="email-subject" type="text"
               class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
               placeholder="Let me know how we can help you" required>
           </div>
           <div class="sm:col-span-2">
-            <label for="message" class="block mb-2 text-sm font-medium text-gray-100 dark:text-secondary">
+            <label for="email-message" class="block mb-2 text-sm font-medium text-gray-100 dark:text-secondary">
               Your message
             </label>
-            <textarea rows="6" id="message"
+            <textarea rows="6" id="email-message"
               class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
               placeholder="Leave a comment...">
             </textarea>
           </div>
           <a href="mailto:siddhant.deshmukh@outlook.com?subject=Meow"
+            id="send-email-link"
             class="py-3 px-5 text-sm font-medium text-center border border-primary text-primary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
             Send message
           </a>
         </form>
       </div>
-    </section>
+    </section> -->
     <!-- component -->
     <!-- Foooter -->
-    <section class="px-2 py-10">
-      <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-        <p class="mt-8 text-base leading-6 text-center text-secondary">
-          Contact Me I will reach you within 24 hours.
+    <section class=" px-2 py-10 w-full">
+      <div class="my-20 max-w-screen-xl w-full px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <h2 class="text-center text-2xl lg:text-4xl font-bold">Contact Me</h2>
+        <p class="mt-8 text-base leading-6 text-center text-primary">
+          Have any full stack or software developement related job for me? <br/> Contact Me I will reach you within 24 hours!
         </p>
+        <div class="flex justify-center">
+          <a href="mailto:siddhant.deshmukh@outlook.com"
+            class="flex items-center space-x-5 px-5 py-3 rounded-lg mx-auto border border-secondary text-secondary">
+            <svg class="w-4 lg:w-6 xl:w-8 aspect-square" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+            <span>Mail Me</span>
+          </a>
+        </div>
         <div class="flex justify-center my-8 space-x-6">
-          <a href="#" class="text-secondary hover:text-secondary2">
+          <a href="mailto:siddhant.deshmukh@outlook.com" class="text-primary">
             <span class="sr-only">Mail</span>
-            <svg class="w-8 lg:w-10 xl:w-12 aspect-square" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" class="w-6 h-6">
+            <svg class="w-8 lg:w-10 xl:w-12 aspect-square" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
             </svg>
           </a>
-          <a href="#" class="text-secondary hover:text-secondary2">
+          <a href="#" class="text-primary">
             <span class="sr-only">Instagram</span>
             <svg class="w-8 lg:w-10 xl:w-12 aspect-square" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd"
@@ -434,7 +448,7 @@
                 clip-rule="evenodd"></path>
             </svg>
           </a>
-          <a href="#" class="text-secondary hover:text-secondary2">
+          <a href="#" class="text-primary">
             <span class="sr-only">Twitter</span>
             <svg class="w-8 lg:w-10 xl:w-12 aspect-square" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -442,7 +456,7 @@
               </path>
             </svg>
           </a>
-          <a href="#" class="text-secondary hover:text-secondary2">
+          <a href="https://github.com/siddhant-deshmukh" class="text-primary">
             <span class="sr-only">GitHub</span>
             <svg class="w-8 lg:w-10 xl:w-12 aspect-square" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd"
@@ -450,17 +464,19 @@
                 clip-rule="evenodd"></path>
             </svg>
           </a>
-          <a href="#" class="text-secondary hover:text-secondary2">
+          <a href="mailto:learner.siddhant.deshmukh@gmail.com" class="text-primary">
             <span class="sr-only">Mail</span>
-            <svg class="w-8 lg:w-10 xl:w-12 aspect-square" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" class="w-6 h-6">
+            <svg class="w-8 lg:w-10 xl:w-12 aspect-square" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
             </svg>
           </a>
         </div>
-        <span></span>
       </div>
+      <p class="mt-8 text-xs leading-6 text-center text-primary">
+        Designed and build by Siddhant Deshmukh
+      </p>
     </section>
   </main>
 </body>

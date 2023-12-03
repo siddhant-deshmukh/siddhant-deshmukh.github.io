@@ -140,8 +140,8 @@ projectFilterBtns.forEach((btn) => {
 
 const inViewAnimeEle = document.querySelectorAll('.temp-hidden')
 
-for(let ele of inViewAnimeEle){
-  for(let child of ele.children){
+for (let ele of inViewAnimeEle) {
+  for (let child of ele.children) {
     child.classList.add("temp-hide")
     child.classList.remove("temp-show")
   }
@@ -152,16 +152,16 @@ const elementInViewObserver = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       // console.log(entry.target.children.item())
       var delay = 0
-      for(let child of entry.target.children){
+      for (let child of entry.target.children) {
         // console.log(child)
         child.classList.remove("temp-hide")
         child.classList.add("temp-show")
         child.style.transitionDelay = delay.toString() + "ms"
-        if(delay < 1000){
+        if (delay < 1000) {
           delay += 200
         }
       }
-    } 
+    }
     // else {
     //   for(let child of entry.target.children){
     //     child.classList.add("temp-hide")
@@ -216,7 +216,7 @@ function resizeImg() {
     } else if (width > 1280) {
       // console.log(width, (width - 800 - 100) + "px")
       document.documentElement.style.setProperty("--three-d-cube-size", (width - 800 - 100) + "px")
-    } else if(width <= 640 ) {
+    } else if (width <= 640) {
       document.documentElement.style.setProperty("--three-d-cube-size", (width - 100) + "px")
     } else {
       document.documentElement.style.setProperty("--three-d-cube-size", (width / 2) + "px")
@@ -296,3 +296,36 @@ setInterval(() => {
 }, 3000)
 // radioGroup.addEventListener( 'change', changeSide );
 
+
+const submitBtn = document.getElementById("send-email-link")
+const emailInput = document.getElementById("email")
+const subjectInput = document.getElementById("email-subject")
+const messageInput = document.getElementById("email-message")
+
+// emailInput.addEventListener('change', ()=> {
+//   ModifyEmailLink()
+// })
+subjectInput.addEventListener('change', (event)=> {
+  var newSubject = event.target.value
+  newSubject = newSubject.split(' ').join('%20')
+  // console.log(event.target.value , newSubject)
+  ModifyEmailLink("subject", newSubject)
+})
+messageInput.addEventListener('change', (event)=> {
+  // console.log("message", event.target.value)
+  var newMsg = event.target.value
+  newMsg = newMsg.split(' ').join('%20')
+  newMsg = newMsg.split('\n').join('%0D%0A')
+  // console.log(event.target.value , newMsg)
+  ModifyEmailLink("body", newMsg)
+})
+var submitUrl = "mailto:siddhant.deshmukh@outlook.com?subject=&body="
+function ModifyEmailLink(field, value) {
+  if (submitBtn &&  subjectInput && messageInput) {
+    // console.log(`mailto:${emailInput.value}?submit=${subjectInput.value}&body=${messageInput.value}`)
+    url = new URL(submitBtn.href)
+    url.searchParams.set(field, value)
+    console.log(url)
+    submitBtn.href = url.href
+  }
+}
